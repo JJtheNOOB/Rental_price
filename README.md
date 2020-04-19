@@ -1,4 +1,6 @@
-# Rental price
+# Rental Price Evaluation
+
+Project members: JJtheNOOB & [archer99076](https://github.com/archer99076)
 
 __Goal__: To estimate apartment price based on information we can get from the website
 
@@ -9,4 +11,4 @@ __Goal__: To estimate apartment price based on information we can get from the w
     - Property detailed information (Unit amenaties, building amenaties etc..)
     
 - Step two -  Data Cleaning (modify data into the format that can be better analyzed)
-   - 
+
