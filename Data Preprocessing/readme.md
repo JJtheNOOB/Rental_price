@@ -9,7 +9,7 @@
 
 # Initial Findings
 
-- Price range:
+- __Price range count__:
    - '345.0 ~ 1084.65': 48,
    - '1084.65 ~ 1824.3': 642,
    - '1824.3 ~ 2563.95': 1912,
@@ -20,8 +20,9 @@
    - '5522.55 ~ 6262.2': 19,
    - '6262.2 ~ 7001.85': 17,
    - '7001.85 ~ 7741.5': 3
-   
-   
+
+(* Excluded extremely high price properties such as a 25,000 CAD / month room )
+
 | <img src="https://github.com/JJtheNOOB/Rental_price/blob/master/Data%20Preprocessing/location.png" width="400" height="250"> | <img src="https://github.com/JJtheNOOB/Rental_price/blob/master/Data%20Preprocessing/bedroom.png" width="400" height="250"> |
 |:--:| :--:|
 | *location* | *bedroom* |
