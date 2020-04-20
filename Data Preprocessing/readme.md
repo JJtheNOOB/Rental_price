@@ -5,6 +5,7 @@
 - expand room and price column (3000 -> 3729 data points)
 - standardize room type column (added 1 to 6 bedrooms)
 - grab other features out such as whether has den
+- trying to grab features such as bathroom from original webpage
 
 # Initial Findings
 
