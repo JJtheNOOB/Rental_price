@@ -7,6 +7,8 @@
 - grab other features out such as whether has den
 - trying to grab features such as bathroom from original webpage
 
+__Update__: Pulled bathroom and bedroom number from website - No need to convert anymore
+
 # Initial Findings
 
 - __Price range count__:
