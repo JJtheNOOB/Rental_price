@@ -11,4 +11,12 @@ __Goal__: To estimate apartment price based on information we can get from the w
     - Property detailed information (Unit amenaties, building amenaties etc..)
     
 - Step two -  Data Cleaning (modify data into the format that can be better analyzed)
+   - removed duplicated columns
+   - removed and merged redundant and similar columns, such as schools and school
+   - modified some column type such as price column as float number
+   - added some new columns such as number of dens etc
+ 
+ - Step three - Data Modeling (Including some attempts of feature engineering)
+   - Tried feature engineering (such as bed / bath ratio and single price)
+   - Final accuracy IQR range +- 120 CAD
 
