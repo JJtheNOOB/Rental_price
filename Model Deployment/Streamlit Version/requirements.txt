@@ -1,0 +1,5 @@
+pandas
+gunicorn
+lightgbm
+geopy
+streamlit

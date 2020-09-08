@@ -1,0 +1,19 @@
+body {
+    color: #ff9966;
+    background-color: #ffffff;
+    font-size: 140%;
+}
+
+.stButton>button {
+    color: #ff9966;
+    height: 5em;
+    width: 12em;
+}
+
+.stTextInput>div>div>input {
+    color: #ff9966;
+}
+
+.stSelectBox>div>text {
+    font-size: 140%;
+}
