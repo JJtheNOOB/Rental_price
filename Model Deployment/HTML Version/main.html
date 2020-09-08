@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 35%;
+}
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+<head>
+    <title>Toronto Area Housing Price Evaluation</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1 style="color:Tomato;">Toronto Area Housing Price Evaluation</h1>
+    <p>
+    <img src = "https://wp-tid.zillowstatic.com/trulia/wp-content/uploads/sites/3/2019/05/how-to-rent-out-your-house-e14146.png"
+         alt = "Rental logo" width="600" height="300" class="center">
+  </p>
+        </div>
+</body>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        Address:
+        <input name="address" type="text" required>
+        <br>
+        <br>(Please enter your address, no postal code needed)
+        <br>
+        <br> Number of Bedrooms: (We recommend entering less than 5 bedrooms for better pricing)
+        <input name="bedroom_num" type="number" required>
+        <br>
+        <br>
+        <label for="air_cond">Air Conditioning Available?</label>
+        <select name="air_cond" id="air_cond">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="water">Are Water Bills Free?</label>
+        <select name="water" id="water">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="storage_room">Are Storage Room / Locker Available?</label>
+        <select name="storage_room" id="storage_room">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="parking">Are Parking Spaces Available?</label>
+        <select name="parking" id="parking">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="under_park">Is the parking space underground?</label>
+        <select name="under_park" id="under_park">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="gym">Is gym / exercise room Available?</label>
+        <select name="gym" id="gym">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <label for="laundry">Are laundry rooms / facilities Available?</label>
+        <select name="laundry" id="laundry">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" align="center">
+    {% if result %}
+        {% for variable, value in original_input.items() %}
+            <b>{{ variable }}</b> : {{ value }}
+        {% endfor %}
+        <br>
+        <br>
+           <p style="font-size:30px">{{ Error_message }}</p>
+        <br>
+        <br><p style="font-size:30px">Your rental price evaluated:</p>
+           <p style="font-size:50px">{{ result }}</p>
+        <br><p style="font-size:30px">Our confidence Level as follows:</p>
+           <p style="font-size:30px">{{ confidence }}</p>
+    {% endif %}
+</div>
+</html>
