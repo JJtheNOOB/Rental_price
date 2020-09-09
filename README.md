@@ -19,4 +19,12 @@ __Goal__: To estimate apartment price based on information we can get from the w
  - Step three - Data Modeling (Including some attempts of feature engineering)
    - Tried feature engineering (such as bed / bath ratio and single price)
    - Final accuracy IQR range +- 120 CAD
+ 
+ - HTML Version: https://rental-model.herokuapp.com/
+ - Streamlit Version: https://rental-model-jj.herokuapp.com/
+   
+   - Future Improvements:
+    - Distributed Database (NoSQL)
+    - Automate the update process
+    - Adding more features on the deployment page
 
